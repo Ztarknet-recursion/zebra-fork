@@ -1,5 +1,5 @@
 {
-    "channel_hash": "blake2s",
+    "channel_hash": "poseidon31",
     "pcs_config": {
         "pow_bits": 26,
         "fri_config": {
@@ -8,5 +8,6 @@
             "n_queries": 70
         }
     },
-    "preprocessed_trace": "canonical"
+    "preprocessed_trace": "canonical",
+    "store_polynomials_coefficients": false
 }

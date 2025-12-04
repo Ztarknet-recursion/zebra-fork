@@ -7,7 +7,7 @@ edition = "2024_07"
 
 [dependencies]
 cairo_execute = "2.12"
-stwo_cairo_air = { git = "https://github.com/starkware-libs/stwo-cairo", rev = "f57087fe5ce57e6ffe5b9c42e08038f60b3b12f4", default-features = false, features = ["qm31_opcode"] }
+stwo_cairo_air = { git = "https://github.com/Ztarknet-recursion/stwo-cairo-fork", default-features = false, features = ["qm31_opcode", "blake_outputs_packing"] }
 
 [cairo]
 enable-gas = false

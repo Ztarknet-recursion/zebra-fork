@@ -10,11 +10,9 @@ name = "zebra-prove"
 path = "src/main.rs"
 
 [features]
-default = ["tx_v6"]
-tx_v6 = ["zebra-chain/tx_v6", "zebra-rpc/tx_v6"]
+default = []
 
 [dependencies]
-# CLI and utilities
 clap = { version = "4", features = ["derive"] }
 anyhow = "1"
 serde = { version = "1", features = ["derive"] }
@@ -24,7 +22,6 @@ env_logger = "0.11"
 log = "0.4"
 tokio = { version = "1", features = ["full"] }
 zip = { version = "0.6", default-features = false, features = ["deflate"] }
-hex = { workspace = true }
 
 # STARK proof dependencies
 cairo-air = { git = "https://github.com/starkware-libs/stwo-cairo", rev = "f57087fe5ce57e6ffe5b9c42e08038f60b3b12f4" }
@@ -37,19 +34,3 @@ starknet-ff = "0.3"
 bincode = "1"
 bzip2 = "0.4"
 rand_core = "0.6"
-
-# Zebra/Zcash dependencies - use workspace members (path dependencies)
-zebra-client = { path = "../zebra-client" }
-zebra-rpc = { path = "../zebra-rpc" }
-zebra-chain = { path = "../zebra-chain" }
-zebra-node-services = { path = "../zebra-node-services" }
-
-# Zcash primitives - use workspace dependencies
-zcash_primitives = { workspace = true }
-zcash_extensions = { workspace = true }
-zcash_transparent = { workspace = true }
-zcash_protocol = { workspace = true }
-zcash_address = { workspace = true }
-zcash_proofs = { workspace = true }
-zcash_keys = { workspace = true }
-zcash_history = { workspace = true }

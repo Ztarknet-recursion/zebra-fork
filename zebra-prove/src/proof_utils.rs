@@ -10,7 +10,6 @@ use std::io::{Read, Write};
 use std::path::Path;
 use stwo_cairo_serialize::CairoDeserialize;
 use stwo_cairo_serialize::CairoSerialize;
-
 use stwo::core::vcs::blake2_merkle::Blake2sMerkleHasher;
 
 /// Bootloader output wrapper structure
