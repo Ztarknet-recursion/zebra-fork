@@ -8,6 +8,6 @@
             "n_queries": 70
         }
     },
-    "preprocessed_trace": "canonical",
+    "preprocessed_trace": "canonical_without_pedersen",
     "store_polynomials_coefficients": false
 }
